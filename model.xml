@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
 	<struct>
-		<and abstract="true" mandatory="true" name="Ejercicio6CamarasSLRCanon">
-			<feature name="Base"/>
+		<and abstract="true" mandatory="true" name="Camara">
+			<and mandatory="true" name="Sensor">
+				<alt mandatory="true" name="tamaño">
+					<feature name="Full frame"/>
+					<feature name="APS-H"/>
+					<feature name="APS-C"/>
+				</alt>
+			</and>
+			<alt mandatory="true" name="Pixeles">
+				<feature name="18.1"/>
+				<feature name="21.1"/>
+				<feature name="16.1"/>
+				<feature name="22.3"/>
+				<feature name="20.2"/>
+			</alt>
+			<or mandatory="true" name="Montaje">
+				<feature name="EF"/>
+				<feature name="EFS"/>
+			</or>
+			<and mandatory="true" name="Viewfinder">
+				<feature mandatory="true" name="Pentaprism"/>
+			</and>
+			<and mandatory="true" name="ISO">
+				<alt mandatory="true" name="Bajo">
+					<feature name="50"/>
+					<feature name="100"/>
+				</alt>
+				<alt mandatory="true" name="Alto">
+					<feature name="204800"/>
+					<feature name="3200"/>
+					<feature name="102400"/>
+					<feature name="25600"/>
+					<feature name="51200"/>
+				</alt>
+			</and>
 		</and>
 	</struct>
 </featureModel>

@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-	<feature name="Ejercicio6CamarasSLRCanon"/>
-	<feature name="Base"/>
+	<feature automatic="selected" name="Camara"/>
+	<feature automatic="selected" name="Sensor"/>
+	<feature automatic="selected" name="tamaño"/>
+	<feature manual="selected" name="Full frame"/>
+	<feature automatic="unselected" name="APS-H"/>
+	<feature automatic="unselected" name="APS-C"/>
+	<feature automatic="selected" name="Pixeles"/>
+	<feature automatic="unselected" name="18.1"/>
+	<feature manual="selected" name="21.1"/>
+	<feature automatic="unselected" name="16.1"/>
+	<feature automatic="unselected" name="22.3"/>
+	<feature automatic="unselected" name="20.2"/>
+	<feature automatic="selected" name="Montaje"/>
+	<feature manual="selected" name="EF"/>
+	<feature manual="selected" name="EFS"/>
+	<feature automatic="selected" name="Viewfinder"/>
+	<feature automatic="selected" name="Pentaprism"/>
+	<feature automatic="selected" name="ISO"/>
+	<feature automatic="selected" name="Bajo"/>
+	<feature automatic="unselected" name="50"/>
+	<feature manual="selected" name="100"/>
+	<feature automatic="selected" name="Alto"/>
+	<feature automatic="unselected" name="204800"/>
+	<feature manual="selected" name="3200"/>
+	<feature automatic="unselected" name="102400"/>
+	<feature automatic="unselected" name="25600"/>
+	<feature automatic="unselected" name="51200"/>
 </configuration>
